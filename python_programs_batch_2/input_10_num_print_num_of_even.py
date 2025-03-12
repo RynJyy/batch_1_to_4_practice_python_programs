@@ -5,5 +5,5 @@ for i in range(10):
     #identify the even numbers
     if num % 2 == 0:
         even_counter += 1
-#print how many even numbers
+#print how many even number
 print(f"\nThere are {even_counter} even numbers")
