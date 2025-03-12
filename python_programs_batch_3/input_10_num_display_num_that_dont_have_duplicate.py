@@ -10,5 +10,5 @@ for num in numbers:
     if numbers.count(num) == 1:
         unique_numbers += 1
         #print the numbers that dont have duplicate
-        print(f"\n The numbers that dont have duplicate:{num}")
+        print(f"\n The numbers that dont have duplicate: {num}")
 

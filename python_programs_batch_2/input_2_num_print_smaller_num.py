@@ -1,12 +1,15 @@
-#Ask 2 numbers
-num_1 = int(input("\nEnter the first number: "))
-num_2 = int(input("Enter the second number: "))
-#Check the smaller number
-if num_1 < num_2:
-    #Print the smaller number
-    print(f"\nThe smaller number is {num_1}")
-elif num_2 < num_1:
-    print(f"\nThe smaller number is {num_2}")
-#if the input is equal
-else:
-    print("\nInvalid")
+# Create a list to store numbers
+numbers = []
+
+# Ask the user to enter 10 numbers
+for i in range(10):
+    num = int(input(f"Enter number {i + 1}: "))
+    numbers.append(num)
+
+# Display numbers (first entry only for duplicates)
+displayed_numbers = []  # List to track already displayed numbers
+
+for num in numbers:
+    if num not in displayed_numbers:
+        print(num)
+        displayed_numbers.append(num)
